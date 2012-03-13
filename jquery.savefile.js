@@ -29,6 +29,7 @@
     return this.each(function() {
       var content;
       content = this.val() !== "" ? this.val() : this.text();
+      if (settings.content != null) content = settings.content;
       return buildForm(content).submit();
     });
   };

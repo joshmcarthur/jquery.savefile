@@ -30,5 +30,6 @@ $.fn.savefile = (options) ->
 
   this.each ->
     content = if this.val() != "" then this.val() else this.text()
+    content = settings.content if settings.content?
     buildForm(content).submit()
 
