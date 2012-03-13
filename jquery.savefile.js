@@ -7,8 +7,7 @@
     var buildFilename, buildForm, buildURL, settings;
     settings = $.extend({
       filename: 'file',
-      extension: 'txt',
-      content: 'Hello world'
+      extension: 'txt'
     }, options);
     buildURL = function(filename, content) {
       var url;

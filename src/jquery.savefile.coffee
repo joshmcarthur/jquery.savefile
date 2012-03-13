@@ -6,7 +6,6 @@ $.fn.savefile = (options) ->
   settings = $.extend(
     filename: 'file'
     extension: 'txt'
-    content: 'Hello world'
   ,options)
 
   buildURL = (filename, content) ->
