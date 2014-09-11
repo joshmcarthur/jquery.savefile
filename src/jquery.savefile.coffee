@@ -9,7 +9,7 @@ $.fn.savefile = (options) ->
   ,options)
 
   buildURL = (filename, content) ->
-    url = "http://savefile.joshmcarthur.com/#{encodeURIComponent(filename)}"
+    url = "https://savefile.herokuapp.com/#{encodeURIComponent(filename)}"
     url += encodeURIComponent(content) if content
 
   buildFilename =
